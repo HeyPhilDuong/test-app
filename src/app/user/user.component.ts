@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { UsersService } from "../users.service";
 
-
 @Component({
   selector: "app-user",
   templateUrl: "./user.component.html",
@@ -22,10 +21,8 @@ export class UserComponent implements OnInit {
     this._userService.getUsers().subscribe(data => (this.user = data));
   }
 
-  fireEvent(name) { 
-    this.childEvent.emit("Bonjour " + name)
+  fireEvent() { 
+    this.childEvent.emit("true")
   }
-
-  
 
 }

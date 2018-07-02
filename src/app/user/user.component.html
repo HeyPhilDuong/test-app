@@ -1,3 +1,4 @@
+<button (click)="fireEvent()">Send Event</button>
 <h1>{{"Hello " + name}}</h1>
 <h2>{{bonjour}}</h2>
 <h2>{{bonjour2}}</h2>
@@ -25,5 +26,5 @@
 
 </mat-sidenav-container> -->
 
-<app-test (test)="bonjour=$event" (test2)="bonjour2=$event" [user]="user" ></app-test>
+<app-test (test)="bonjour=$event" (test2)="bonjour2=$event" [user]="user"></app-test>
 </div>

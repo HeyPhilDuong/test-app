@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   public name = "Jen";
-  public message = "";
-  events: string[] = [];
-  opened: boolean;
+  public message = false;
 }
