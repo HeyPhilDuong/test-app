@@ -1,0 +1,29 @@
+<h1>{{"Hello " + name}}</h1>
+<h2>{{bonjour}}</h2>
+<h2>{{bonjour2}}</h2>
+<h2>User List</h2>
+<div *ngFor="let user of user; let i = index" class="userContainer" [class.userContainerFirst]="i === 0">
+  
+  <!-- <mat-sidenav-container>
+  <div>
+  <div class="contain">
+    <ul>
+      <li>{{user.id}}</li>
+      <li>{{user.name}}</li>
+      <li>{{user.email}}</li>
+      <button (click)="fireEvent(user.name)">Send Event</button>
+    </ul>
+    <button mat-raised-button (click)="sidenav.toggle()">
+        <i class="material-icons">face</i>
+    </button>
+  </div>
+</div>
+  
+  <mat-sidenav #sidenav mode="side" position="end" [(opened)]="opened">
+      {{user.name}}
+  </mat-sidenav>
+
+</mat-sidenav-container> -->
+
+<app-test (test)="bonjour=$event" (test2)="bonjour2=$event" [user]="user" ></app-test>
+</div>

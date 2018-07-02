@@ -1,0 +1,15 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .contain {
+      width: 100vw;
+      color: white;
+      background-color: blue;
+      position: absolute;
+      right: 0;
+  }

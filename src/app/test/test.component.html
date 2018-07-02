@@ -1,0 +1,15 @@
+<mat-sidenav-container >
+  <div class="{{sidenav.opened ? 'contain2' : 'contain'}}" (swipeleft)="sidenav.toggle()" (swiperight)="sidenav.toggle()">
+    <div class="flex">
+      {{user.name}}
+      <button (click)="sayBonjour(user.name)">Bonjour</button>
+      <button (click)="sayBonjour2(user.name)">Hey</button>
+      <button mat-raised-button (click)="sidenav.toggle()">
+        <i class="material-icons">face</i>
+      </button>
+    </div>
+  </div>
+  <mat-sidenav #sidenav mode="side" position="end" opened="false">
+    {{user.email}}
+  </mat-sidenav>
+</mat-sidenav-container>

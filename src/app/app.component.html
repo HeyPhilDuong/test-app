@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<router-outlet></router-outlet>
+
+<!-- <mat-sidenav-container class="example-container">
+    <div class="contain">
+        HEY HEY HEY HEY HEY HEY HEY HEY HEY HEY HEY HEY
+        <button mat-raised-button (click)="first.toggle()">
+            <i class="material-icons">face</i>
+        </button>
+    </div>
+    <mat-sidenav #first mode="side" position="end" [(opened)]="opened">
+        Sidenav content
+    </mat-sidenav>
+
+</mat-sidenav-container> -->
+
+<h1>{{message}}</h1>
+<app-user (childEvent)="message=$event" [parentData]="name"></app-user>
+

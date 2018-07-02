@@ -1,0 +1,39 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.userContainer {
+    border-bottom: 1px solid black;
+}
+
+/* .userContainer:hover {
+    background-color: lightgray;
+    height: 100%;
+} */
+
+.userContainerFirst { 
+    border-top: 1px solid black;
+}
+
+.contain {
+      width: 100vw;
+      color: white;
+      background-color: blue;
+      position: relative;
+      right: 0;
+}
+
+.relative {
+    height: 200px;
+    /* position: absolute; */
+}

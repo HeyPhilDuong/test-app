@@ -1,0 +1,28 @@
+.flex {
+  display: flex;
+}
+
+.contain {
+  overflow: hidden;
+  color: black;
+  background-color: lavenderblush;
+  width: 100vw;
+  height: 70px;
+  transform: translate(0px);
+  transition: transform 0.4s;
+}
+
+.contain2 {
+  overflow: hidden;
+  color: black;
+  background-color: lavenderblush;
+  width: 100vw;
+  height: 70px;
+  transform: translate(-200px);
+  transition: transform 0.3s;
+}
+
+mat-sidenav {
+  overflow: hidden;
+  width: 200px !important;
+}
