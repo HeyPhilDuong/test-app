@@ -1,4 +1,14 @@
-<button (click)="fireEvent()">Send Event</button>
+<!-- button sends to parent component -->
+<button *ngIf="!this.message" (click)="fireEvent()">Show</button>
+<button *ngIf="this.message" (click)="hideMessage()">Hide</button>
+<br />
+<br />
+<!-- button toggle in this user component -->
+<h1 *ngIf="show">Text to show</h1>
+<button (click)="show = !show">{{show ? 'Hide' : 'Show'}}</button>
+
+
+
 <h1>{{"Hello " + name}}</h1>
 <h2>{{bonjour}}</h2>
 <h2>{{bonjour2}}</h2>

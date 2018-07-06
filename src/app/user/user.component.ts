@@ -11,6 +11,8 @@ export class UserComponent implements OnInit {
   public user = [];
   public bonjour = "";
   public bonjour2 = "";
+  message: boolean = false;
+  show: boolean = true;
   
   @Input("parentData") public name;
   @Output() public childEvent = new EventEmitter();
@@ -22,7 +24,14 @@ export class UserComponent implements OnInit {
   }
 
   fireEvent() { 
-    this.childEvent.emit("true")
+    this.message = true
+    this.childEvent.emit(this.message)
   }
+
+  hideMessage() { 
+    this.message = false
+    this.childEvent.emit(this.message)
+  }
+
 
 }
