@@ -2,3 +2,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+html {
+    height: 100%;
+}
+
+/* @media screen and (max-height: 800px) {
+    html, body {
+        overflow: hidden;
+        height: 60vh;
+        background-color: blue;
+    }
+} */

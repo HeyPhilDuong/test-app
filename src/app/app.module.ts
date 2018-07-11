@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AutosizeDirective } from 'angular-autosize';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
@@ -45,12 +46,15 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
+import { InputExampleComponent } from './input-example/input-example.component';
+import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    TestComponent
+    TestComponent,
+    InputExampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +71,9 @@ import {
     MatGridListModule,
     MatSidenavModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

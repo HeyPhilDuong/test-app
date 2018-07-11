@@ -1,0 +1,53 @@
+.header {
+    background-color: pink;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#messages {
+    padding-top: 65px;
+    padding-bottom: 100px;
+    background-color: aquamarine;
+    height: 100%;
+    /* height: calc(100vh - 165px); */
+    min-height: 30px;
+    overflow: scroll;
+}
+
+#input {
+    position: fixed;
+    bottom: 0;
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+    width: 100vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox {
+    width: 100px;
+}
+
+textarea {
+    font-size: 16px;
+}
+
+/* @media screen and (max-height: 800px) {
+
+    #header {
+        position: absolute;
+    }
+
+    #input {
+        position: fixed;
+        bottom: 0;
+        background-color: orange;
+    }
+
+    #messages {
+        margin-top: 0px;
+    }
+} */
