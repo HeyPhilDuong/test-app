@@ -44,8 +44,9 @@
     </div>
   </div>
   <div id="input">
-    <!-- <textarea [ngModel]="textAreaInput" (ngModelChange)="resizeText()"></textarea> -->
-    <textarea (keydown)="resizeText()" (keyup)="resizeText()"></textarea>
-    <button>CLICK</button>
+    <!-- <textarea [(ngModel)]="textAreaInput" (ngModelChange)="resizeText()"></textarea> -->
+    <textarea [(ngModel)]="textAreaInput" (keydown)="resizeText()" (keyup)="resizeText()"></textarea>
+    <button (click)="clearInput()">CLICK</button>
   </div>
+  
 </div>

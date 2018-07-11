@@ -33,21 +33,5 @@
 
 textarea {
     font-size: 16px;
+    height: 22px;
 }
-
-/* @media screen and (max-height: 800px) {
-
-    #header {
-        position: absolute;
-    }
-
-    #input {
-        position: fixed;
-        bottom: 0;
-        background-color: orange;
-    }
-
-    #messages {
-        margin-top: 0px;
-    }
-} */

@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { AutosizeDirective } from 'angular-autosize';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
