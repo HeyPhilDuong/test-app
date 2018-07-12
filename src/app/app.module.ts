@@ -47,6 +47,7 @@ import {
 } from '@angular/material';
 import { InputExampleComponent } from './input-example/input-example.component';
 import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
+import { FixedComponent } from './fixed/fixed.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/fo
     UserComponent,
     TestComponent,
     InputExampleComponent,
+    FixedComponent,
   ],
   imports: [
     BrowserModule,
