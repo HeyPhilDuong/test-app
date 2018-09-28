@@ -1,0 +1,23 @@
+{
+    "messages": {
+        "title": "MESSAGES",
+        "bee": "BEE",
+        "iceCream": "ICE CREAM",
+        "superb": "SUPERB",
+        "magnificent": "magnificent",
+        "marvelous": "marvelous",
+        "jesus": "jesus",
+        "sick": "sick",
+        "takeOverConversation": "take over conversation",
+        "one": "one",
+        "two": "two",
+        "three": "three",
+        "four": "four",
+        "sixteen": "sixteen"
+    },
+    
+    "name": {
+        "title": "Hello I am {{name}}, I am {{age}} years old.",
+        "id": "My id is {{id}}"
+    }
+}

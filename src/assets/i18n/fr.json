@@ -1,0 +1,23 @@
+{
+    "messages": {
+        "title": "message d'interet public!",
+        "bee": "Abeille",
+        "iceCream": "Creme glacee!",
+        "superb": "Super!!",
+        "magnificent": "Magnifique",
+        "marvelous": "Magnissime!",
+        "jesus": "Jésus Bob Poitras",
+        "sick": "M-A-L-A-D-E",
+        "takeOverConversation": "reprendre la conversation",
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "four": "4",
+        "sixteen": "SEIZE"
+    },
+
+    "name": {
+        "title": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans.",
+        "id": "Mon identifiant est {{id}}"
+    }
+}

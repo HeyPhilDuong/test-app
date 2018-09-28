@@ -1,35 +1,32 @@
 <div class="container">
   <div class="header">
-    HEADER
+    CHANGE LANG
+    <button mat-raised-button (click)="useLang('en')">ENGLISH</button>
+    <button mat-raised-button (click)="useLang('fr')">FRANÇAIS</button>
   </div>
   <div id="messages" class="messages">
     <div>
       <ul>
-        <li>MESSAGES</li>
-        <li>BEE</li>
-        <li>ICE CREAM</li>
-        <li>SUPERB</li>
-        <li>MAGNIFICIENT</li>
-        <li>MARVELOUS</li>
-        <li>MESSAGES</li>
-        <li>JESUS</li>
-        <li>SICK</li>
-        <li>MESSAGES</li>
-        <li>TAKE OVER CONVERSATION</li>
-        <li>MESSAGES</li>
-        <li>ONE</li>
-        <li>TWO</li>
-        <li>THREE</li>
-        <li>FOUR</li>
-        <li>MESSAGES</li>
-        <li>SIXTEEN</li>   
-        <li>MESSAGES</li>
-        <li>MESSAGES</li>
-        <li>MESSAGES</li>
-        <li>MESSAGES</li>
-        <li>MESSAGES</li>
-        <li>MESSAGES</li>
-
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.bee' | translate }}</li>
+        <li>{{ 'messages.iceCream' | translate }}</li>
+        <li>{{ 'messages.magnificent' | translate }}</li>
+        <li>{{ 'messages.marvelous' | translate }}</li>
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.jesus' | translate }}</li>
+        <li>{{ 'messages.sick' | translate }}</li>
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.takeOverConversation' | translate }}</li>
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.one' | translate }}</li>
+        <li>{{ 'messages.two' | translate }}</li>
+        <li>{{ 'messages.three' | translate }}</li>
+        <li>{{ 'messages.four' | translate }}</li>
+        <li>{{ 'messages.title' | translate }}</li>
+        <li>{{ 'messages.sixteen' | translate }}</li> 
+        <li>{{ 'name.title' | translate:{'name': name, 'age': age} }}</li>
+        <li>{{ 'name.id' | translate: {'id': id } }}</li>
       </ul>
     </div>
   </div>
