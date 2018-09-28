@@ -1,23 +1,26 @@
 {
-    "messages": {
-        "title": "message d'interet public!",
-        "bee": "Abeille",
-        "iceCream": "Creme glacee!",
-        "superb": "Super!!",
-        "magnificent": "Magnifique",
-        "marvelous": "Magnissime!",
-        "jesus": "Jésus Bob Poitras",
-        "sick": "M-A-L-A-D-E",
-        "takeOverConversation": "reprendre la conversation",
-        "one": "1",
-        "two": "2",
-        "three": "3",
-        "four": "4",
-        "sixteen": "SEIZE"
-    },
-
-    "name": {
-        "title": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans.",
-        "id": "Mon identifiant est {{id}}"
-    }
+	"demo": {
+		"qqch": ""
+	},
+	"messages": {
+		"bee": "Abeille",
+		"four": "4",
+		"iceCream": "Creme glacee!",
+		"jesus": "Jésus Bob Poitras",
+		"magnificent": "Magnifique",
+		"marvelous": "Magnissime!",
+		"one": "1",
+		"sick": "M-A-L-A-D-E",
+		"sixteen": "SEIZE",
+		"superb": "Super!!",
+		"takeOverConversation": "reprendre la conversation",
+		"three": "3",
+		"title": "message d'interet public!",
+		"two": "2"
+	},
+	"name": {
+		"id": "Mon identifiant est {{id}}",
+		"test": "Quelques tests sur l'extraction",
+		"title": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans."
+	}
 }

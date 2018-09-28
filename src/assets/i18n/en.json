@@ -1,23 +1,26 @@
 {
-    "messages": {
-        "title": "MESSAGES",
-        "bee": "BEE",
-        "iceCream": "ICE CREAM",
-        "superb": "SUPERB",
-        "magnificent": "magnificent",
-        "marvelous": "marvelous",
-        "jesus": "jesus",
-        "sick": "sick",
-        "takeOverConversation": "take over conversation",
-        "one": "one",
-        "two": "two",
-        "three": "three",
-        "four": "four",
-        "sixteen": "sixteen"
-    },
-    
-    "name": {
-        "title": "Hello I am {{name}}, I am {{age}} years old.",
-        "id": "My id is {{id}}"
-    }
+	"demo": {
+		"qqch": ""
+	},
+	"messages": {
+		"bee": "BEE",
+		"four": "four",
+		"iceCream": "ICE CREAM",
+		"jesus": "jesus",
+		"magnificent": "magnificent",
+		"marvelous": "marvelous",
+		"one": "one",
+		"sick": "sick",
+		"sixteen": "sixteen",
+		"superb": "SUPERB",
+		"takeOverConversation": "take over conversation",
+		"three": "three",
+		"title": "MESSAGES",
+		"two": "two"
+	},
+	"name": {
+		"id": "My id is {{id}}",
+		"test": "Testing this extraction!",
+		"title": "Hello I am {{name}}, I am {{age}} years old."
+	}
 }
