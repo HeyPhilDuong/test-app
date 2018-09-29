@@ -18,6 +18,11 @@
 		"title": "message d'interet public!",
 		"two": "2"
 	},
+	"msg": {
+		"none": "aucun agent disponible",
+		"one": "1 agent disponible",
+		"other": "{{availableAgentsCount}} agents disponibles"
+	},
 	"name": {
 		"id": "Mon identifiant est {{id}}",
 		"test": "Quelques tests sur l'extraction",

@@ -11,13 +11,25 @@ export class InputExampleComponent implements OnInit {
   name = 'Phil Duong';
   age = 21;
   id = 123;
+  availableAgentsCount = 0;
+  messageMapping: any = {
+    '=0': 'msg.none',
+    '=1': 'msg.one',
+    'other': 'msg.other'
+  }
 
   constructor(private translationService: TranslateService) {
     this.translationService.setDefaultLang('en');
     this.translationService.use('en');
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    setInterval(() => {
+      if (this.availableAgentsCount < 15) {
+        this.availableAgentsCount++;
+      }
+     }, 1000);
+  }
 
   resizeText() {
     const input = window.document.getElementById('input');

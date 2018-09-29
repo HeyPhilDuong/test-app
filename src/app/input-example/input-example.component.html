@@ -28,14 +28,16 @@
         <li>{{ 'name.title' | translate:{'name': name, 'age': age} }}</li>
         <li>{{ 'name.id' | translate: {'id': id } }}</li>
         <li>{{ 'name.test' | translate }}</li>
-        <li>{{ 'demo.qqch' | translate }}</li>
+        <li>{{ availableAgentsCount | i18nPlural: messageMapping | translate:{availableAgentsCount: availableAgentsCount} }}</li>
+        <!-- {availableAgentsCount, plural, =0 {(no agent available)} =1 {({{availableAgentsCount}} agent available)} other {({{availableAgentsCount}}
+          agents available)}} -->
       </ul>
     </div>
   </div>
   <div id="input">
     <!-- <textarea [(ngModel)]="textAreaInput" (ngModelChange)="resizeText()"></textarea> -->
     <textarea [(ngModel)]="textAreaInput" (keydown)="resizeText()" (keyup)="resizeText()"></textarea>
-    <button (click)="clearInput()">CLICK</button>
+    <button mat-raised-button (click)="clearInput()">CLICK</button>
   </div>
-  
+
 </div>

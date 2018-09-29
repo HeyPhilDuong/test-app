@@ -5,8 +5,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateModule, TranslateLoader, TranslateCompiler } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {

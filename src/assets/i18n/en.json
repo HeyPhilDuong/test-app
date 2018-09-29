@@ -18,6 +18,11 @@
 		"title": "MESSAGES",
 		"two": "two"
 	},
+	"msg": {
+		"none": "no agent available",
+		"one": "1 agent available",
+		"other": "{{availableAgentsCount}} agents available"
+	},
 	"name": {
 		"id": "My id is {{id}}",
 		"test": "Testing this extraction!",
