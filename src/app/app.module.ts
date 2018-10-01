@@ -7,6 +7,7 @@ import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './/app-routing.module';
 import {TranslateModule, TranslateLoader, TranslateCompiler } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateMessageFormatCompiler, MESSAGE_FORMAT_CONFIG } from 'ngx-translate-messageformat-compiler';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
@@ -74,6 +75,10 @@ export function HttpLoaderFactory(http: HttpClient) {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
+      },
+      compiler: {
+        provide: TranslateCompiler,
+        useClass: TranslateMessageFormatCompiler
       }
     }),
     HttpClientModule,
@@ -92,7 +97,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

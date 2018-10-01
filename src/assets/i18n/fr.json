@@ -21,16 +21,18 @@
 	"msg": {
 		"none": "aucun agent disponible",
 		"one": "1 agent disponible",
-		"other": "{{availableAgentsCount}} agents disponibles"
+		"other": "{availableAgentsCount} agents disponibles"
 	},
 	"name": {
-		"id": "Mon identifiant est {{id}}",
+		"id": "Mon identifiant est {id}",
 		"test": "Quelques tests sur l'extraction",
-		"title": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans."
+		"title": "Bonjour je m'appelle {name}, j'ai {age} ans."
 	},
+	"people": "{gender, select, male{He is} female{She is} other{They are}} {how}",
 	"test": {
 		"none": "0",
-		"one": "singular {{availableAgentsCount}}",
-		"plural": "many agents ({{availableAgentsCount}} available)"
-	}
+		"one": "singular {availableAgentsCount}",
+		"plural": "many agents ({availableAgentsCount} available)"
+	},
+	"things": "There {count, plural, =0{is} one{is} other{are}} {count, plural, =0{} one{a} other{several}} {count, plural, =0{nothing} one{thing} other{things}}"
 }
