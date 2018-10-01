@@ -29,6 +29,8 @@
         <li>{{ 'name.id' | translate: {'id': id } }}</li>
         <li>{{ 'name.test' | translate }}</li>
         <li>{{ availableAgentsCount | i18nPlural: messageMapping | translate:{availableAgentsCount: availableAgentsCount} }}</li>
+        <li>{{ availableAgentsCount | i18nPlural: testMap | translate:{availableAgentsCount: availableAgentsCount} }}</li>
+
         <!-- {availableAgentsCount, plural, =0 {(no agent available)} =1 {({{availableAgentsCount}} agent available)} other {({{availableAgentsCount}}
           agents available)}} -->
       </ul>

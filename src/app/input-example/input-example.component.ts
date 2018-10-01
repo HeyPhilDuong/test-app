@@ -18,6 +18,12 @@ export class InputExampleComponent implements OnInit {
     'other': 'msg.other'
   }
 
+  testMap: any = {
+    '=0': 'test.none',
+    '=1': 'test.singular',
+    'other': 'test.plural'
+  }
+
   constructor(private translationService: TranslateService) {
     this.translationService.setDefaultLang('en');
     this.translationService.use('en');
