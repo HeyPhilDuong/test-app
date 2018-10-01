@@ -20,7 +20,7 @@ export class InputExampleComponent implements OnInit {
 
   testMap: any = {
     '=0': 'test.none',
-    '=1': 'test.singular',
+    '=1': 'test.one',
     'other': 'test.plural'
   }
 

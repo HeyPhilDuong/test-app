@@ -27,5 +27,10 @@
 		"id": "My id is {{id}}",
 		"test": "Testing this extraction!",
 		"title": "Hello I am {{name}}, I am {{age}} years old."
+	},
+	"test": {
+		"none": "0",
+		"one": "singular {{availableAgentsCount}}",
+		"plural": "many agents ({{availableAgentsCount}} available)"
 	}
 }

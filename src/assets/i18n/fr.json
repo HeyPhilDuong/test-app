@@ -27,5 +27,10 @@
 		"id": "Mon identifiant est {{id}}",
 		"test": "Quelques tests sur l'extraction",
 		"title": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans."
+	},
+	"test": {
+		"none": "0",
+		"one": "singular {{availableAgentsCount}}",
+		"plural": "many agents ({{availableAgentsCount}} available)"
 	}
 }
