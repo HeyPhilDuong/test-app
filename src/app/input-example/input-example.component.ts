@@ -30,8 +30,9 @@ export class InputExampleComponent implements OnInit {
   // lalala = TRANSLATE('test.test');
 
   constructor(private translationService: TranslateService) {
-    this.translationService.setDefaultLang('en');
+    this.translationService.setDefaultLang('fr');
     this.translationService.use('en');
+    this.getValue();
   }
 
   ngOnInit() {
@@ -39,7 +40,7 @@ export class InputExampleComponent implements OnInit {
       if (this.availableAgentsCount < 15) {
         this.availableAgentsCount++;
       }
-     }, 1000);
+    }, 1000);
   }
 
   resizeText() {
@@ -68,5 +69,11 @@ export class InputExampleComponent implements OnInit {
 
   useLang(lang: string) {
     this.translationService.use(lang);
+  }
+
+  getValue() {
+    this.translationService.stream('name.title', { name: 'Pattate', age: 123 }).subscribe((translated: string) => {
+      console.log(translated);
+    })
   }
 }
