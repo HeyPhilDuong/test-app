@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import { _ } from "@biesbjerg/ngx-translate-extract/dist/utils/utils";
+export function TRANSLATE(str: string) {
+  return str;
+}
 @Component({
   selector: 'app-input-example',
   templateUrl: './input-example.component.html',
@@ -23,6 +26,8 @@ export class InputExampleComponent implements OnInit {
     '=1': 'test.one',
     'other': 'test.plural'
   }
+
+  // lalala = TRANSLATE('test.test');
 
   constructor(private translationService: TranslateService) {
     this.translationService.setDefaultLang('en');
