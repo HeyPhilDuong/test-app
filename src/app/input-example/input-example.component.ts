@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { _ } from "@biesbjerg/ngx-translate-extract/dist/utils/utils";
+import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
+import { MatSnackBar } from '@angular/material';
 export function TRANSLATE(str: string) {
   return str;
 }
@@ -10,7 +11,7 @@ export function TRANSLATE(str: string) {
   styleUrls: ['./input-example.component.css']
 })
 export class InputExampleComponent implements OnInit {
-  textAreaInput: string = '';
+  textAreaInput = '';
   name = 'Phil Duong';
   age = 21;
   id = 123;
@@ -19,20 +20,24 @@ export class InputExampleComponent implements OnInit {
     '=0': 'msg.none',
     '=1': 'msg.one',
     'other': 'msg.other'
-  }
+  };
 
   testMap: any = {
     '=0': 'test.none',
     '=1': 'test.one',
     'other': 'test.plural'
-  }
+  };
 
   // lalala = TRANSLATE('test.test');
 
-  constructor(private translationService: TranslateService) {
+  constructor(private translationService: TranslateService, public snackbar: MatSnackBar, private zone: NgZone) {
     this.translationService.setDefaultLang('fr');
     this.translationService.use('en');
     this.getValue();
+
+    document['onResumeTest'] = (data) => {
+      this.wrapZone(data);
+    };
   }
 
   ngOnInit() {
@@ -74,6 +79,14 @@ export class InputExampleComponent implements OnInit {
   getValue() {
     this.translationService.stream('name.title', { name: 'Pattate', age: 123 }).subscribe((translated: string) => {
       console.log(translated);
-    })
+    });
+  }
+
+  wrapZone(data) {
+    this.zone.run(() => {
+      this.snackbar.open(data, 'OPEN', {
+        duration: 3000
+      }).onAction().subscribe(() => console.log('Snackbar is opened!'));
+    });
   }
 }
